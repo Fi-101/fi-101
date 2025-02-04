@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGAWebSR</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../system/image/2.png');
+        }
+       header {
+            background: linear-gradient(10deg, black, darkgreen, black);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background: linear-gradient(0deg, black, darkgreen);
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+          nav ul li a:hover {
+            background: black;
+            border-radius: 2px;
+        }
+        nav ul li a.active {
+            background: white;
+            color: black;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+         footer {
+            background: linear-gradient(10deg, black, darkgreen, black);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+         .pgalogo img{
+            height: 130px;
+            margin-top: 20px;
+         }
+         .pgalogo img:hover{
+            transform: scale(1.2); 
+         }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            width: 300px;
+            height: 300px;
+            perspective: 500px;
+            position: relative;
+        }
+        .content {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+        .card:hover .content {
+            transform: rotateY(180deg);
+            transition: transform 0.5s;
+        }
+        .front, .back {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: white;
+            text-align: center;
+            font-size: 60px;
+            border-radius: 5px;
+            backface-visibility: hidden;
+        }
+        .back {
+            background: #ffff;
+            transform: rotateY(180deg);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                background: linear-gradient(to bottom, red, yellow);
+            }
+        }
+        
+
+        /* planteximage */
+        .planteximage img{
+        margin-top: 3px;
+          max-height: 500px;
+        }
+        /* end planteximage code */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> <b> PGA Green Global Solutions Co. </b></h1>
+        <p><b> Jomabo Bldg., #78 Commission Civil,
+Jaro, Iloilo City </b></p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.php">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 style="color: #fff;">Our Product</h2>
+            <div class="pgalogo"> 
+                <img src="../system/logo/plantexw.png" style="height:200px">
+            </div>
+             
+
+             <div class="planteximage"> <!-- plantexprod --> 
+                <img src="../system/image/4.png">
+            
+
+            <div class="plantexvideo"  style="margin-top: 30px; background-color: black; padding: 10px; border-radius: 10px; box-shadow: 5px 10px 10px 10px #fff;"> <!-- plantexvideo -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pgC9S6uFJhI?si=vKr4GXMthWzXYxdN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> <!-- plantexvideo -->
+        </div> <!-- plantexprod --> 
+
+            <br> 
+            <br>
+            <br>
+
+            <p style="color: white; font-size: 50px; "> <b> PLANTEX PRODUCTS </b> </p>
+            <div class="card-container">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p1.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info1.png" style="height:105%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p2.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info2.png" style="height:107%; padding-bottom: 20px">
+                        </div>
+                    </div>
+                </div>
+                         <div class="card">
+                <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p3.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info3.png" style="height:140%; padding-top:20px">
+                        </div>
+                    </div>
+                </div>
+                         <div class="card">
+                                <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p4.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info4.png" style="height:140%; padding-top:10px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p5.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info5.png" style="height:140%; padding-top:20px">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p6.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info6.png" style="height:140%; padding-top:20px">
+                        </div>
+                    </div>
+                </div>
+                   <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p7.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info7.png" style="height:140%; padding-top:20px">
+                        </div>
+                    </div>
+                </div>
+                   <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img src="../system/plantex/p8.png" style="height:90%; padding-top: 30px">
+                        </div>
+                        <div class="back">
+                            <img src="../system/info/info8.png" style="height:140%; padding-top:20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <br>
+    
+        </section>
+    </main>
+    <script>
+        //for hover menu 
+      document.addEventListener("DOMContentLoaded", function() {
+            let links = document.querySelectorAll("nav ul li a");
+            let currentPath = window.location.pathname;
+            
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPath.split("/").pop()) {
+                    link.classList.add("active");
+                }
+            });
+        });
+      //end for hover menu
+    </script>
+    <footer>
+        <p>&copy; 2025 PGAGreenGlobalSolutionsCo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
