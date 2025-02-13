@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICWebSR</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../system/image/ficbg.png');
+        }
+        header {
+            background: linear-gradient(10deg, black, darkred, black);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background: linear-gradient(0deg, black, darkred);
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+         nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            background: black;
+            border-radius: 2px;
+        }
+        nav ul li a.active {
+            background: white;
+            color: black;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background: linear-gradient(10deg, black, darkred, black);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /*pga video*/
+        .pgavideo {
+    height: 500px;
+    overflow: hidden;
+    background: #000;
+}
+
+.pgavideo iframe {
+    width: 540px;
+    height: 415px;
+}
+        /*end of pga video*/
+
+         /* Start of Body Code */
+         .pgalogo img{
+                 height: 130px;
+                 margin-top: 20px;
+         }
+         .pgalogo img:hover{
+                transform: scale(1.2); 
+         }
+
+         .whatpga p:hover{
+                transform: scale(1.1); 
+         }
+
+         .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+         
+         .services{
+            justify-content: center;
+            display: flex; 
+            margin-top: 1px;
+        }
+
+         .services img{
+            border-radius: 20px; 
+            box-shadow: 10px 10px 20px 20px white;
+         }
+
+    .pgalicon img:hover{
+         transform: scale(1.2); 
+}
+.pgalicon{
+     list-style: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> <b> First Industry Co. </b></h1>
+        <p><b> Jomabo Bldg., #78 Commission Civil,
+Jaro, Iloilo City </b></p>
+
+        <nav>
+            <ul>
+                <li><a href="fi.html">Home</a></li>
+                <li><a href="ficproduct.html">Products</a></li>
+                <li><a href="ficcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Our Company</h2>
+
+            <div class="pgalogo"> <!-- pga logo --> 
+                <img src="../system/logo/fic.png">
+            </div> <!-- pga logo -->  
+
+            <br>
+            
+            <div class="whatpga"> <!-- whatpga --> 
+
+            <p style="color: black; font-size: 16px; background-color:rgba(255, 255, 255, 0.9); border-radius: 15px; padding: 30px; margin-left: 10%; margin-right: 10%;"> 
+
+                <b> First Industry Company (FIC) </b>is a provider of comprehensive fire protection and industrial safety products, headquartered in Jaro, Iloilo City, Philippines. The company is dedicated to preventing the loss of lives and property due to fire incidents by offering a wide range of fire safety solutions.
+                    <br>
+            <br>
+FIC's flagship product is <b>"Fire 101,"</b> which includes various types of <b>high-quality, non-toxic, and environmentally friendly fire extinguishers.</b> The company specializes not only in the manufacture of fire extinguishers but also in the installation, design, and inspection of fire detection and alarm systems.
+    <br>
+            <br>
+FIC operates under a commitment to safety, reliability, and quality assurance, ensuring that their products and services meet stringent industry standards. They target multiple sectors, including residential, commercial, industrial, healthcare, and educational institutions, helping clients achieve compliance with fire safety regulations.
+    <br>
+            <br>
+Overall, FIC aims to create a safer environment by investing in innovative technology, providing expert services, and actively engaging in community fire safety education.
+        </div> <!-- whatpga --> 
+        <br>
+        <br>
+
+        <div class="pgavideo" style="background-color: #000; padding-top:50px; border-radius: 10px;padding-bottom: 5px;"> <!-- pgavideo -->
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5hjt-BKEnvw?si=UnYSAEeIJZDJlH-x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div> <!-- pgavideo -->
+
+        <div class="w3-container">
+</div>
+
+<div class="services"> <!-- services -->
+<div class="w3-content w3-display-container" style="max-width:800px; margin: 100px;">
+  <img class="mySlides" src="../system/ficservices/fic1.png" style="width:100%">
+   <img class="mySlides" src="../system/ficservices/fic2.png" style="width:100%">
+    <img class="mySlides" src="../system/ficservices/fic3.png" style="width:100%">
+     <img class="mySlides" src="../system/ficservices/fic4.png" style="width:100%">
+
+
+
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+</div><!-- services --> 
+  </div>
+</div>
+
+<br>
+<br>
+<div class="pgalicon"> <!-- fic -->
+ <li> <a href="index.html"> <img src="../system/logo/pga.png" style="height: 80px; background-color: white; padding: 10px; border-radius: 10px;"> </a> </li>
+</div> <!-- fic -->
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script>
+//for hover menu 
+      document.addEventListener("DOMContentLoaded", function() {
+            let links = document.querySelectorAll("nav ul li a");
+            let currentPath = window.location.pathname;
+            
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPath.split("/").pop()) {
+                    link.classList.add("active");
+                }
+            });
+        });
+      //end for hover menu
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 FirstIndustryCo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

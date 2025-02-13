@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGAWebSR</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../system/image/ficbg.png');
+        }
+       header {
+            background: linear-gradient(10deg, black, darkred, black);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background: linear-gradient(0deg, black, darkred);
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+          nav ul li a:hover {
+            background: black;
+            border-radius: 2px;
+        }
+        nav ul li a.active {
+            background: white;
+            color: black;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+         footer {
+            background: linear-gradient(10deg, black, darkred, black);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+         .pgalogo img{
+            height: 130px;
+            margin-top: 20px;
+         }
+         .pgalogo img:hover{
+            transform: scale(1.2); 
+         }
+
+
+         /* CONTACT */
+          .ctc{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+         }
+         .contact-info {
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 30px;
+            font-size: clamp(16px, 2vw, 20px);
+            text-align: center;
+            margin-top: 70px;
+         }
+         /* End of Contact Code */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> <b> First Industry Co. </b></h1>
+        <p><b> Jomabo Bldg., #78 Commission Civil,
+Jaro, Iloilo City </b></p>
+
+        <nav>
+            <ul>
+                <li><a href="fi.html">Home</a></li>
+                <li><a href="ficproduct.html">Products</a></li>
+                <li><a href="ficcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our Contact Information</h2>
+           
+            <div class="pgalogo"> <!-- pga logo --> 
+                <img src="../system/logo/fic.png">
+            </div> <!-- pga logo -->  
+           
+           <div class="contact-info"> <!-- contact --> 
+             <br> 
+             <div class="ctc">
+                <div>
+                    <b>ILOILO BRANCH</b><br>
+                    Jomabo Bldg., #78 Commission Civil, Jaro, Iloilo City<br>
+                    Tel. No.:  (033)-327-6430<br>
+                    Mobile: 0917-801-2677<br>
+                    Email: firstindustrycom@gmail.com
+                </div>
+                <div>
+                    <b>BACOLOD BRANCH</b><br>
+                    Room 3 Carmel Arcade, La Salle Avenue, Bacolod City<br>
+                    Tel No.: (034)-467-4473<br>
+                    Mobile: 0917-142-1192<br>
+                    Email: ficbacolod2021@gmail.com
+                </div>
+             </div>
+           </div> <!-- contact -->  
+    </main>
+
+     <br> 
+           <br> 
+           <br> 
+           <br>
+
+     <script>
+        //for hover menu 
+      document.addEventListener("DOMContentLoaded", function() {
+            let links = document.querySelectorAll("nav ul li a");
+            let currentPath = window.location.pathname;
+            
+            links.forEach(link => {
+                if (link.getAttribute("href") === currentPath.split("/").pop()) {
+                    link.classList.add("active");
+                }
+            });
+        });
+      //end for hover menu
+    </script>
+
+    <footer>
+        <p>&copy; 2025 PGAGreenGlobalSolutionsCo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
